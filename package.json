@@ -10,7 +10,8 @@
     "server": "npm run watch --prefix server",
     "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "npm run build --prefix client && npm start --prefix server",
+    "test": "npm run test --prefix server && npm run test --prefix client"
   },
   "repository": {
     "type": "git",
@@ -22,5 +23,8 @@
   "bugs": {
     "url": "https://github.com/Ana-teston/Nasa_Project_Node.js/issues"
   },
-  "homepage": "https://github.com/Ana-teston/Nasa_Project_Node.js#readme"
+  "homepage": "https://github.com/Ana-teston/Nasa_Project_Node.js#readme",
+  "dependencies": {
+    "morgan": "^1.10.0"
+  }
 }
