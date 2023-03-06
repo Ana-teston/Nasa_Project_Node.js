@@ -11,6 +11,7 @@
     "client": "npm start --prefix client",
     "watch": "npm run server & npm run client",
     "deploy": "npm run build --prefix client && npm start --prefix server",
+    "deploy-cluster": "npm run build --prefix client && npm run cluster --prefix server",
     "test": "npm test --prefix server && npm test --prefix client"
   },
   "repository": {
@@ -19,14 +20,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Ana-teston/Nasa_Project_Node.js/issues"
-  },
-  "homepage": "https://github.com/Ana-teston/Nasa_Project_Node.js#readme",
-  "dependencies": {
-    "jest": "^29.4.3",
-    "morgan": "^1.10.0",
-    "supertest": "^6.3.3"
-  }
+  "license": "ISC"
 }
