@@ -37,4 +37,4 @@ jobs:
           npm start --prefix server
 
       - name: Run tests
-        run: npm test
+        run: npm test --prefix server
