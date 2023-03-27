@@ -35,4 +35,6 @@ jobs:
           npm install
           npm run build --prefix client
           npm start --prefix server
-      - run: npm test
+      - run:
+          npm test --prefix server
+          npm test --prefix client
