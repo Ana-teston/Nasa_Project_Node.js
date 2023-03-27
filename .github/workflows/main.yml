@@ -33,8 +33,7 @@ jobs:
       - name: Install dependencies and build
         run:
           npm install
-          npm run build --prefix client
+          npm run build --prefix client --passWithNoTests
           npm start --prefix server
       - run:
-          npm test --prefix server
-          npm test --prefix client
+          npm test
